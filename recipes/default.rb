@@ -29,7 +29,11 @@
 # Support only Ubuntu for any other platform just dont execute
 
 raise "This recipe is not supported in current platform #{node['platform']}. Run it in ubuntu" if node['platform'] != 'ubuntu'
+
 include_recipe 'mifosx::initialize'
-include_recipe 'mifosx::java'
+#include_recipe 'mifosx::java'
+include_recipe 'java_se'
 include_recipe 'mifosx::install_my_sql'
+include_recipe 'mifosx::install_tomcat'
+include_recipe 'mifosx::fineract_platform'
 

@@ -23,6 +23,8 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 #
 # source_url 'https://github.com/<insert_org_here>/mifosx'
 
-depends 'java', '~> 1.50.0'
+#depends 'java', '~> 1.26.0'
 depends 'mysql', '~> 8.3.1'
 depends 'keytool', '~> 0.7.1'
+depends 'java_se', '~> 8.0'
+depends 'database', '= 1.2.0'
