@@ -1,4 +1,4 @@
-name 'mifosx'
+name 'mifosx_chef'
 maintainer 'shaikkhajaibrahim'
 maintainer_email 'shaik.khaja.ibrahim@live.in'
 license 'All Rights Reserved'
@@ -15,16 +15,16 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/mifosx/issues'
+ issues_url 'https://github.com/asquarezone/mifosx_chef/issues'
 
 # The `source_url` points to the development reposiory for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/mifosx'
+ source_url 'https://github.com/asquarezone/mifosx_chef'
 
-#depends 'java', '~> 1.26.0'
 depends 'mysql', '~> 8.3.1'
-depends 'keytool', '~> 0.7.1'
 depends 'java_se', '~> 8.0'
 depends 'database', '= 1.2.0'
+
+supports 'ubuntu'
